@@ -38,20 +38,24 @@
           <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item active">
-                <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{route('home')}}">{{__('messages.Home')}} <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('about')}}"> About</a>
+                <a class="nav-link" href="{{route('about')}}"> {{__('messages.About')}}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('service')}}"> Services </a>
+                <a class="nav-link" href="{{route('service')}}"> {{__('messages.Services')}} </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('team')}}"> Guards </a>
+                <a class="nav-link" href="{{route('team')}}"> {{__('messages.Guards')}} </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('contact')}}">Contact us</a>
+                <a class="nav-link" href="{{route('contact')}}">{{__('messages.Contact us')}}</a>
               </li>
+              <li class="nav-item" ><a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('en') }}">En</a></li>
+              <br>
+              <li class="nav-item"><a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">عربي</a></li>
+   
             </ul>
           </div>
         </nav>
